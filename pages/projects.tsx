@@ -22,20 +22,24 @@ export default function Projects() {
 
   const boxesData = [
     {
-      title: "Unnamed Olive oil company",
-      subtitle: "a branding project connecting identity and flavor."
+      title: "Assignment 1",
+      subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      title: "Clava Sports",
-      subtitle: "I'm a developer at Clava Sports, a company developing a fantastic app to follow amateur football"
+      title: "Assignment 2",
+      subtitle: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
     },
     {
-      title: "Scialè",
-      subtitle: "Changing radically the flow of booking an hut."
+      title: "Assignment 3",
+      subtitle: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis."
     },
     {
-      title: "365 Sunrises",
-      subtitle: "1 year of film-photos of Sunrises from the same point of view. Good excuse to wake up early"
+      title: "Assignment 4",
+      subtitle: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione."
+    },
+    {
+      title: "Final Group Project",
+      subtitle: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
     }
   ];
 

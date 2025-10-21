@@ -191,7 +191,8 @@ html, body {
   
   .custom-pagination {
     position: relative !important;
-    margin-top: 15px !important;
+    margin-top: 0px !important;
+    transform: translateY(-20px) !important;
     text-align: center !important;
     z-index: 10 !important;
   }
@@ -349,7 +350,7 @@ html, body {
   
   .boxes-container {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -395,6 +396,7 @@ html, body {
     overflow: visible !important;
     text-overflow: unset !important;
   }
+  
   
   .contact-section {
     top: 85%;
@@ -448,7 +450,7 @@ html, body {
   
   .boxes-container {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 95%;
@@ -487,8 +489,9 @@ html, body {
     hyphens: auto;
   }
   
+  
   .contact-section {
-    top: 87%;
+    top: 85%;
     padding: 0 0.5rem;
   }
   
