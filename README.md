@@ -60,3 +60,4 @@ className="
 ```
 
 Puoi anche usare colori personalizzati con la sintassi `from-[#hexcolor]`.
+

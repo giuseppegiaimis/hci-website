@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import BoxesCarousel from "../components/BoxesCarousel";
 
 export default function About() {
   useEffect(() => {
@@ -18,6 +19,25 @@ export default function About() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const boxesData = [
+    {
+      title: "Business Informatics",
+      subtitle: "Foundation in systems and technology"
+    },
+    {
+      title: "Ai & Data Mining",
+      subtitle: "Exploring intelligent solutions"
+    },
+    {
+      title: "Photography",
+      subtitle: "Just capture the moment"
+    },
+    {
+      title: "Agriculture",
+      subtitle: "Doing Olive oil"
+    }
+  ];
 
   return (
     <>
@@ -55,24 +75,7 @@ export default function About() {
       </div>
       
       {/* Boxes Container */}
-      <div className="boxes-container">
-        <div className="box">
-          <div className="box-title">Business Informatics</div>
-          <div className="box-subtitle">Foundation in systems and technology</div>
-        </div>
-        <div className="box">
-          <div className="box-title">Ai & Data Mining</div>
-          <div className="box-subtitle">Exploring intelligent solutions</div>
-        </div>
-        <div className="box">
-          <div className="box-title">Photography</div>
-          <div className="box-subtitle">Just capture the moment</div>
-        </div>
-        <div className="box">
-          <div className="box-title">Agriculture</div>
-          <div className="box-subtitle">Doing Olive oil</div>
-        </div>
-      </div>
+      <BoxesCarousel boxes={boxesData} />
       
       {/* Contact Section */}
       <div className="contact-section">

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import BoxesCarousel from "../components/BoxesCarousel";
 
 export default function Projects() {
   useEffect(() => {
@@ -18,6 +19,25 @@ export default function Projects() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const boxesData = [
+    {
+      title: "Unnamed Olive oil company",
+      subtitle: "a branding project connecting identity and flavor."
+    },
+    {
+      title: "Clava Sports",
+      subtitle: "I'm a developer at Clava Sports, a company developing a fantastic app to follow amateur football"
+    },
+    {
+      title: "Scialè",
+      subtitle: "Changing radically the flow of booking an hut."
+    },
+    {
+      title: "365 Sunrises",
+      subtitle: "1 year of film-photos of Sunrises from the same point of view. Good excuse to wake up early"
+    }
+  ];
 
   return (
     <>
@@ -55,24 +75,7 @@ export default function Projects() {
       </div>
       
       {/* Boxes Container */}
-      <div className="boxes-container">
-        <div className="box">
-          <div className="box-title">Unnamed Olive oil company</div>
-          <div className="box-subtitle">a branding project connecting identity and flavor.</div>
-        </div>
-        <div className="box">
-          <div className="box-title">Clava Sports</div>
-          <div className="box-subtitle">I&apos;m a developer at Clava Sports, a company developing a fantastic app to follow amateur football</div>
-        </div>
-        <div className="box">
-          <div className="box-title">Scialè</div>
-          <div className="box-subtitle">Changing radically the flow of booking an hut.</div>
-        </div>
-        <div className="box">
-          <div className="box-title">365 Sunrises</div>
-          <div className="box-subtitle">1 year of film-photos of Sunrises from the same point of view. Good excuse to wake up early</div>
-        </div>
-      </div>
+      <BoxesCarousel boxes={boxesData} />
       
       {/* Contact Section */}
       <div className="contact-section">
