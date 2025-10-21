@@ -9,6 +9,8 @@
 html, body {
   overflow-x: hidden;
   max-width: 100vw;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 :root {
@@ -220,6 +222,40 @@ html, body {
 }
 
 @media (max-width: 768px) {
+  .page-title {
+    font-size: 3rem;
+    line-height: 120%;
+    padding: 0 1rem;
+  }
+  
+  .page-subtitle {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    max-width: 90%;
+  }
+  
+  .about-label {
+    font-size: 1.5rem;
+  }
+  
+  .discover-button {
+    width: 20rem;
+    height: 6rem;
+    font-size: 1.5rem;
+  }
+  
+  .header {
+    top: 1rem;
+    left: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .home-button, .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
   .footer-container {
     flex-direction: column;
     gap: 0.5rem;
@@ -237,6 +273,7 @@ html, body {
   .boxes-container {
     gap: 0.75rem;
     padding: 0 0.75rem;
+    top: 75%;
   }
   
   .box {
@@ -250,6 +287,103 @@ html, body {
   
   .box-subtitle {
     font-size: 0.65rem;
+  }
+  
+  .contact-section {
+    top: 88%;
+    padding: 0 1rem;
+  }
+  
+  .contact-title {
+    font-size: 1.25rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 2.5rem;
+    line-height: 110%;
+    padding: 0 0.5rem;
+  }
+  
+  .page-subtitle {
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+    max-width: 95%;
+  }
+  
+  .about-label {
+    font-size: 1.25rem;
+  }
+  
+  .discover-button {
+    width: 18rem;
+    height: 5rem;
+    font-size: 1.25rem;
+  }
+  
+  .header {
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .home-button, .nav-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .boxes-container {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    top: 78%;
+  }
+  
+  .box {
+    width: calc(50% - 0.25rem);
+    height: 5rem;
+    padding: 0.5rem;
+  }
+  
+  .box-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .box-subtitle {
+    font-size: 0.6rem;
+    line-height: 110%;
+  }
+  
+  .contact-section {
+    top: 90%;
+    padding: 0 0.5rem;
+  }
+  
+  .contact-title {
+    font-size: 1.1rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .contact-info {
+    font-size: 0.9rem;
+  }
+  
+  .footer-container {
+    padding: 0.5rem;
+  }
+  
+  .footer-text {
+    font-size: 0.7rem;
   }
 }
 
