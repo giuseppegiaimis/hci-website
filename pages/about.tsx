@@ -6,8 +6,8 @@ export default function About() {
   useEffect(() => {
     // Trigger animation after 1 second
     const timer = setTimeout(() => {
-      const mainContent = document.querySelector('.main-content');
-      const boxesContainer = document.querySelector('.boxes-container');
+      const mainContent = document.querySelector('.main-content') as HTMLElement;
+      const boxesContainer = document.querySelector('.boxes-container') as HTMLElement;
       
       if (mainContent && boxesContainer) {
         mainContent.style.transform = 'translateY(-100px)';
