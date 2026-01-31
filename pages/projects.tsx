@@ -7,11 +7,14 @@ export default function Projects() {
   useEffect(() => {
     // Trigger animation after 1 second
     const timer = setTimeout(() => {
-      const mainContent = document.querySelector('.main-content') as HTMLElement;
+      const groupProjectCard = document.querySelector('.group-project-card') as HTMLElement;
       const boxesContainer = document.querySelector('.boxes-container') as HTMLElement;
       
-      if (mainContent && boxesContainer) {
-        mainContent.style.transform = 'translateY(-100px)';
+      if (groupProjectCard) {
+        groupProjectCard.style.opacity = '1';
+        groupProjectCard.style.pointerEvents = 'auto';
+      }
+      if (boxesContainer) {
         boxesContainer.style.opacity = '1';
         boxesContainer.style.pointerEvents = 'auto';
       }
@@ -20,7 +23,7 @@ export default function Projects() {
     return () => clearTimeout(timer);
   }, []);
 
-  const boxesData = [
+  const assignmentsData = [
     {
       title: "Assignment 1",
       subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -36,10 +39,6 @@ export default function Projects() {
     {
       title: "Assignment 4",
       subtitle: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione."
-    },
-    {
-      title: "Final Group Project",
-      subtitle: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
     }
   ];
 
@@ -48,7 +47,7 @@ export default function Projects() {
       <Head>
         <title>Projects - Giuseppe Giaimis</title>
       </Head>
-      <div className="min-h-screen animated-gradient">
+      <div className="min-h-screen animated-gradient projects-page">
       {/* Header */}
       <div className="header">
         <Link href="/" className="home-button">
@@ -78,8 +77,15 @@ export default function Projects() {
         </p>
       </div>
       
-      {/* Boxes Container */}
-      <BoxesCarousel boxes={boxesData} />
+      {/* Group Project Card - Large and Centered */}
+      <Link href="/group-project" className="group-project-card">
+        <div className="group-project-title">Group Project —</div>
+        <div className="group-project-subtitle">Designing for Cognitive Agency</div>
+        <div className="group-project-description">From problem analysis to iterative prototyping</div>
+      </Link>
+      
+      {/* Assignments Container */}
+      <BoxesCarousel boxes={assignmentsData} />
       
       {/* Contact Section */}
       <div className="contact-section">

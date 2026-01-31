@@ -44,7 +44,7 @@ export default function About() {
       <Head>
         <title>About Me - Giuseppe Giaimis</title>
       </Head>
-      <div className="min-h-screen animated-gradient">
+      <div className="min-h-screen animated-gradient no-scroll">
       {/* Header */}
       <div className="header">
         <Link href="/" className="home-button">

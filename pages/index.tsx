@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Giuseppe Giaimis - Portfolio</title>
       </Head>
-      <div className="min-h-screen animated-gradient">
+      <div className="min-h-screen animated-gradient no-scroll">
       {/* Header */}
       <div className="header">
         <Link href="/" className="home-button">
