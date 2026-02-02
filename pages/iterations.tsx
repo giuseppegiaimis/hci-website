@@ -60,7 +60,7 @@ export default function Iterations() {
               <h3 className="decision-subtitle">Intentional Focus Sessions</h3>
               <p className="analysis-intro">
                 The experience is structured around intentional focus sessions, actively started by the user. 
-                This makes system behaviour explicit and predictable. It responds directly to users' need for 
+                This makes system behaviour explicit and predictable. It responds directly to users&apos; need for 
                 control and transparency.
               </p>
             </div>
@@ -69,7 +69,7 @@ export default function Iterations() {
               <h3 className="decision-subtitle">Notification Bundling</h3>
               <p className="analysis-intro">
                 Notifications are bundled instead of blocked during focus sessions. This reduces interruptions 
-                while avoiding anxiety caused by complete silence. It directly addresses users' fear of missing 
+                while avoiding anxiety caused by complete silence. It directly addresses users&apos; fear of missing 
                 important information.
               </p>
             </div>

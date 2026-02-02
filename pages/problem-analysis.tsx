@@ -97,7 +97,7 @@ export default function ProblemAnalysis() {
               <li>Visually intrusive pop-ups, banners, and badge accumulation</li>
               <li>Poor feedback when muting or dismissing notifications</li>
               <li>Inconsistent notification behaviour within the same app</li>
-              <li>Onboarding that pushes users to "Allow notifications" without explanation</li>
+              <li>Onboarding that pushes users to &quot;Allow notifications&quot; without explanation</li>
               <li>Difficulty finding or understanding notification settings later</li>
               <li>App-centric design instead of user-centric experience</li>
             </ul>
@@ -109,7 +109,7 @@ export default function ProblemAnalysis() {
             <ul className="analysis-list">
               <li>Do Not Disturb and Focus modes</li>
               <li>Digital wellbeing tools (screen time, focus tools)</li>
-              <li>AI-based "smart notifications" (e.g. Gmail, Instagram)</li>
+              <li>AI-based &quot;smart notifications&quot; (e.g. Gmail, Instagram)</li>
               <li>Third-party apps that filter or bundle notifications</li>
             </ul>
             <div className="state-of-art-note">
