@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -6,6 +7,7 @@ import 'swiper/css';
 interface BoxData {
   title: string;
   subtitle: string;
+  href?: string;
 }
 
 interface BoxesCarouselProps {
@@ -32,12 +34,24 @@ const BoxesCarousel: React.FC<BoxesCarouselProps> = ({ boxes }) => {
   if (!isMobile) {
     return (
       <div className="boxes-container">
-        {boxes.map((box, index) => (
-          <div key={index} className="box">
-            <div className="box-title">{box.title}</div>
-            <div className="box-subtitle">{box.subtitle}</div>
-          </div>
-        ))}
+        {boxes.map((box, index) => {
+          const BoxContent = () => (
+            <>
+              <div className="box-title">{box.title}</div>
+              <div className="box-subtitle">{box.subtitle}</div>
+            </>
+          );
+          
+          return box.href ? (
+            <Link key={index} href={box.href} className="box box-link">
+              <BoxContent />
+            </Link>
+          ) : (
+            <div key={index} className="box">
+              <BoxContent />
+            </div>
+          );
+        })}
       </div>
     );
   }
@@ -63,14 +77,28 @@ const BoxesCarousel: React.FC<BoxesCarouselProps> = ({ boxes }) => {
           swiperRef.current = swiper;
         }}
       >
-        {boxes.map((box, index) => (
-          <SwiperSlide key={index}>
-            <div className="box">
+        {boxes.map((box, index) => {
+          const BoxContent = () => (
+            <>
               <div className="box-title">{box.title}</div>
               <div className="box-subtitle">{box.subtitle}</div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </>
+          );
+          
+          return (
+            <SwiperSlide key={index}>
+              {box.href ? (
+                <Link href={box.href} className="box box-link">
+                  <BoxContent />
+                </Link>
+              ) : (
+                <div className="box">
+                  <BoxContent />
+                </div>
+              )}
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
       <div className="custom-pagination">
         {boxes.map((_, index) => (

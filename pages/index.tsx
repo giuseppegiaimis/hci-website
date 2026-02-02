@@ -18,11 +18,11 @@ export default function Home() {
           </svg>
           Giuseppe Giaimis
         </Link>
-        <Link href="/about" className="nav-link">
-          About me
-        </Link>
         <Link href="/projects" className="nav-link">
           Projects
+        </Link>
+        <Link href="/about" className="nav-link">
+          About me
         </Link>
       </div>
       
@@ -32,7 +32,7 @@ export default function Home() {
           bridging data, photos & fun things.
         </h1>
         <p className="page-subtitle text-center max-w-2xl px-4 mb-12">
-          I explore how technology can enhance human experience — through data, empathy, and creativity.
+          A personal portfolio where I explore HCI, data, and design through real projects.
         </p>
         <Link href="/about">
           <button className="discover-button">

@@ -25,20 +25,14 @@ export default function Projects() {
 
   const assignmentsData = [
     {
-      title: "Assignment 1",
-      subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Show & Tell: Website Identity",
+      subtitle: "A critical analysis of how personal websites communicate identity, values, and tone through design choices.",
+      href: "/individual-assignment"
     },
     {
-      title: "Assignment 2",
-      subtitle: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-    },
-    {
-      title: "Assignment 3",
-      subtitle: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis."
-    },
-    {
-      title: "Assignment 4",
-      subtitle: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione."
+      title: "User Feedback & Iteration",
+      subtitle: "Integrating external user feedback through HCI principles to improve usability, clarity, and learnability.",
+      href: "/user-feedback"
     }
   ];
 
@@ -47,7 +41,7 @@ export default function Projects() {
       <Head>
         <title>Projects - Giuseppe Giaimis</title>
       </Head>
-      <div className="min-h-screen animated-gradient projects-page">
+      <div className="animated-gradient projects-page">
       {/* Header */}
       <div className="header">
         <Link href="/" className="home-button">
@@ -57,11 +51,11 @@ export default function Projects() {
           </svg>
           Giuseppe Giaimis
         </Link>
-        <Link href="/about" className="nav-link">
-          About me
-        </Link>
         <Link href="/projects" className="nav-link">
           Projects
+        </Link>
+        <Link href="/about" className="nav-link">
+          About me
         </Link>
       </div>
       

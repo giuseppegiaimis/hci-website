@@ -54,11 +54,11 @@ export default function About() {
           </svg>
           Giuseppe Giaimis
         </Link>
-        <Link href="/about" className="nav-link">
-          About me
-        </Link>
         <Link href="/projects" className="nav-link">
           Projects
+        </Link>
+        <Link href="/about" className="nav-link">
+          About me
         </Link>
       </div>
       

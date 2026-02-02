@@ -39,7 +39,7 @@ export default function GroupProject() {
       <Head>
         <title>Group Project — Full Process - Giuseppe Giaimis</title>
       </Head>
-      <div className="min-h-screen animated-gradient">
+      <div className="animated-gradient">
         {/* Header */}
         <div className="header">
           <Link href="/" className="home-button">
@@ -49,11 +49,11 @@ export default function GroupProject() {
             </svg>
             Giuseppe Giaimis
           </Link>
-          <Link href="/about" className="nav-link">
-            About me
-          </Link>
           <Link href="/projects" className="nav-link">
             Projects
+          </Link>
+          <Link href="/about" className="nav-link">
+            About me
           </Link>
         </div>
 
@@ -127,7 +127,7 @@ export default function GroupProject() {
           <section id="problem" className="project-section">
             <div className="section-content">
               <h2 className="section-title">Problem Analysis</h2>
-              <div className="visual-container">
+              <Link href="/problem-analysis" className="visual-container clickable-section">
                 <div className="visual-placeholder">
                   <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
@@ -135,7 +135,7 @@ export default function GroupProject() {
                   </svg>
                 </div>
                 <p className="visual-caption">User research insight</p>
-              </div>
+              </Link>
             </div>
           </section>
 
@@ -143,7 +143,7 @@ export default function GroupProject() {
           <section id="ideation" className="project-section">
             <div className="section-content">
               <h2 className="section-title">Ideation</h2>
-              <div className="visual-container">
+              <Link href="/ideation" className="visual-container clickable-section">
                 <div className="visual-placeholder">
                   <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
@@ -153,7 +153,7 @@ export default function GroupProject() {
                   </svg>
                 </div>
                 <p className="visual-caption">Early sketch exploration</p>
-              </div>
+              </Link>
             </div>
           </section>
 
@@ -161,7 +161,7 @@ export default function GroupProject() {
           <section id="development" className="project-section">
             <div className="section-content">
               <h2 className="section-title">Development</h2>
-              <div className="visual-container">
+              <Link href="/development" className="visual-container clickable-section">
                 <div className="visual-placeholder">
                   <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
@@ -171,7 +171,7 @@ export default function GroupProject() {
                   </svg>
                 </div>
                 <p className="visual-caption">Prototype development</p>
-              </div>
+              </Link>
             </div>
           </section>
 
@@ -179,7 +179,7 @@ export default function GroupProject() {
           <section id="iterations" className="project-section">
             <div className="section-content">
               <h2 className="section-title">Iterations</h2>
-              <div className="visual-container">
+              <Link href="/iterations" className="visual-container clickable-section">
                 <div className="visual-placeholder">
                   <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
@@ -187,7 +187,7 @@ export default function GroupProject() {
                   </svg>
                 </div>
                 <p className="visual-caption">Prototype iteration</p>
-              </div>
+              </Link>
             </div>
           </section>
 
@@ -195,7 +195,7 @@ export default function GroupProject() {
           <section id="final" className="project-section">
             <div className="section-content">
               <h2 className="section-title">Final Prototype Progression</h2>
-              <div className="visual-container">
+              <Link href="/final-prototype" className="visual-container clickable-section">
                 <div className="visual-placeholder">
                   <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
@@ -204,7 +204,7 @@ export default function GroupProject() {
                   </svg>
                 </div>
                 <p className="visual-caption">Final prototype showcase</p>
-              </div>
+              </Link>
             </div>
           </section>
 
