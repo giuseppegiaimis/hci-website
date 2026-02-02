@@ -73,7 +73,7 @@ export default function Projects() {
       
       {/* Group Project Card - Large and Centered */}
       <Link href="/group-project" className="group-project-card">
-        <div className="group-project-title">Group Project —</div>
+        <div className="group-project-title">Group Project</div>
         <div className="group-project-subtitle">Designing for Cognitive Agency</div>
         <div className="group-project-description">From problem analysis to iterative prototyping</div>
       </Link>

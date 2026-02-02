@@ -126,15 +126,22 @@ export default function GroupProject() {
           {/* Problem Analysis Section */}
           <section id="problem" className="project-section">
             <div className="section-content">
-              <h2 className="section-title">Problem Analysis</h2>
-              <Link href="/problem-analysis" className="visual-container clickable-section">
-                <div className="visual-placeholder">
-                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
-                    <path d="M30 40L45 55L70 30" stroke="rgba(255,255,255,0.3)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <Link href="/problem-analysis" className="section-card">
+                <div className="section-card-icon">
+                  <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.4)" strokeWidth="2" fill="none"/>
+                    <path d="M30 40L45 55L70 30" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
-                <p className="visual-caption">User research insight</p>
+                <div className="section-card-content">
+                  <h2 className="section-card-title">Problem Analysis</h2>
+                  <p className="section-card-description">User research insight</p>
+                </div>
+                <div className="section-card-arrow">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </Link>
             </div>
           </section>
@@ -142,17 +149,24 @@ export default function GroupProject() {
           {/* Ideation Section */}
           <section id="ideation" className="project-section">
             <div className="section-content">
-              <h2 className="section-title">Ideation</h2>
-              <Link href="/ideation" className="visual-container clickable-section">
-                <div className="visual-placeholder">
-                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
+              <Link href="/ideation" className="section-card">
+                <div className="section-card-icon">
+                  <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.4)" strokeWidth="2" fill="none"/>
                     <circle cx="35" cy="35" r="8" fill="rgba(255,255,255,0.2)"/>
                     <circle cx="65" cy="35" r="8" fill="rgba(255,255,255,0.2)"/>
                     <circle cx="50" cy="65" r="8" fill="rgba(255,255,255,0.2)"/>
                   </svg>
                 </div>
-                <p className="visual-caption">Early sketch exploration</p>
+                <div className="section-card-content">
+                  <h2 className="section-card-title">Ideation</h2>
+                  <p className="section-card-description">Early sketch exploration</p>
+                </div>
+                <div className="section-card-arrow">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </Link>
             </div>
           </section>
@@ -160,17 +174,24 @@ export default function GroupProject() {
           {/* Development Section */}
           <section id="development" className="project-section">
             <div className="section-content">
-              <h2 className="section-title">Development</h2>
-              <Link href="/development" className="visual-container clickable-section">
-                <div className="visual-placeholder">
-                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
+              <Link href="/development" className="section-card">
+                <div className="section-card-icon">
+                  <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.4)" strokeWidth="2" fill="none"/>
                     <rect x="25" y="30" width="50" height="40" rx="4" fill="rgba(255,255,255,0.1)"/>
                     <line x1="35" y1="45" x2="65" y2="45" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
                     <line x1="35" y1="55" x2="55" y2="55" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
                   </svg>
                 </div>
-                <p className="visual-caption">Prototype development</p>
+                <div className="section-card-content">
+                  <h2 className="section-card-title">Development</h2>
+                  <p className="section-card-description">Prototype development</p>
+                </div>
+                <div className="section-card-arrow">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </Link>
             </div>
           </section>
@@ -178,15 +199,22 @@ export default function GroupProject() {
           {/* Iterations Section */}
           <section id="iterations" className="project-section">
             <div className="section-content">
-              <h2 className="section-title">Iterations</h2>
-              <Link href="/iterations" className="visual-container clickable-section">
-                <div className="visual-placeholder">
-                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
-                    <path d="M20 50L40 30L60 50L80 30" stroke="rgba(255,255,255,0.3)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+              <Link href="/iterations" className="section-card">
+                <div className="section-card-icon">
+                  <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.4)" strokeWidth="2" fill="none"/>
+                    <path d="M20 50L40 30L60 50L80 30" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
                   </svg>
                 </div>
-                <p className="visual-caption">Prototype iteration</p>
+                <div className="section-card-content">
+                  <h2 className="section-card-title">Iterations</h2>
+                  <p className="section-card-description">Prototype iteration</p>
+                </div>
+                <div className="section-card-arrow">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </Link>
             </div>
           </section>
@@ -194,16 +222,23 @@ export default function GroupProject() {
           {/* Final Prototype Progression Section */}
           <section id="final" className="project-section">
             <div className="section-content">
-              <h2 className="section-title">Final Prototype Progression</h2>
-              <Link href="/final-prototype" className="visual-container clickable-section">
-                <div className="visual-placeholder">
-                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
+              <Link href="/final-prototype" className="section-card">
+                <div className="section-card-icon">
+                  <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="80" height="80" rx="8" stroke="rgba(255,255,255,0.4)" strokeWidth="2" fill="none"/>
                     <rect x="20" y="25" width="60" height="50" rx="4" fill="rgba(255,255,255,0.15)"/>
                     <circle cx="50" cy="50" r="12" fill="rgba(255,255,255,0.2)"/>
                   </svg>
                 </div>
-                <p className="visual-caption">Final prototype showcase</p>
+                <div className="section-card-content">
+                  <h2 className="section-card-title">Final Prototype Progression</h2>
+                  <p className="section-card-description">Final prototype showcase</p>
+                </div>
+                <div className="section-card-arrow">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </Link>
             </div>
           </section>
